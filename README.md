@@ -16,7 +16,7 @@ var files = [
   bundleFile('{{appId}}.bundle.js')
 ];
 ```
-Add `bundleFile('kibana-css-reduce_viz_pad.style.css'),` afer the line `bundleFile('commons.style.css'),`
+Add `bundleFile('kibana-css-reduce_viz_pad.style.css'),` after the line `bundleFile('commons.style.css'),`
 
 The result should look as follows:
 ```
