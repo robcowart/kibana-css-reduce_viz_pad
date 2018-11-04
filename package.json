@@ -1,9 +1,9 @@
 {
   "name": "kibana-css-reduce_viz_pad",
-  "version": "6.3.2",
+  "version": "6.4.2",
   "main": "index.js",
   "kibana": {
-    "version": "6.3.2"
+    "version": "6.4.2"
   },
   "author": "Robert Cowart <rob@koiossian.com>",
   "website": "http://www.koiossian.com"

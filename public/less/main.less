@@ -3,12 +3,12 @@
   padding: 4px 8px;
 }
 .dashboard-panel .panel .panel-content {
-  padding: 0 4px 4px 4px;
+  padding: 0px 4px 4px 4px;
 }
 
 // Reduce padding of visualization within a panel.
-visualization {
-  padding: 0px;
+.visualization {
+  padding: 0px 0px 0px 0px;
 }
 
 // Remove padding from graph portion of visualization.
@@ -19,4 +19,12 @@ visualization {
 // Remove padding from top of legend.
 .vislib-container--legend-right .legend-col-wrapper {
   padding-top: 0px
+}
+
+// Reduce margins - this improves display of input controls.
+.euiFlexGroup--gutterLarge > .euiFlexItem {
+  margin: 8px;
+}
+.euiFlexGroup--gutterLarge {
+  margin: 0px;
 }

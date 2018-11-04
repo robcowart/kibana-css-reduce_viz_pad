@@ -7,13 +7,13 @@ Kibana plugin to reduce padding of visualizations.
 Find this section...
 ```
 var files = [
-  bundleFile('vendors.style.css'),
-  bundleFile('commons.style.css'),
-  bundleFile('{{appId}}.style.css'),
+  createAnchor('{{bundlePath}}/vendors.style.css'),
+  createAnchor('{{bundlePath}}/commons.style.css'),
+  createAnchor('{{bundlePath}}/{{appId}}.style.css'),
 
-  bundleFile('vendors.bundle.js'),
-  bundleFile('commons.bundle.js'),
-  bundleFile('{{appId}}.bundle.js')
+  createAnchor('{{bundlePath}}/vendors.bundle.js'),
+  createAnchor('{{bundlePath}}/commons.bundle.js'),
+  createAnchor('{{bundlePath}}/{{appId}}.bundle.js')
 ];
 ```
 Add `bundleFile('kibana-css-reduce_viz_pad.style.css'),` after the line `bundleFile('commons.style.css'),`
@@ -21,14 +21,14 @@ Add `bundleFile('kibana-css-reduce_viz_pad.style.css'),` after the line `bundleF
 The result should look as follows:
 ```
 var files = [
-  bundleFile('vendors.style.css'),
-  bundleFile('commons.style.css'),
-  bundleFile('kibana-css-reduce_viz_pad.style.css'),
-  bundleFile('{{appId}}.style.css'),
+  createAnchor('{{bundlePath}}/vendors.style.css'),
+  createAnchor('{{bundlePath}}/commons.style.css'),
+  createAnchor('{{bundlePath}}/{{appId}}.style.css'),
+  createAnchor('{{bundlePath}}/kibana-css-reduce_viz_pad.style.css'),
 
-  bundleFile('vendors.bundle.js'),
-  bundleFile('commons.bundle.js'),
-  bundleFile('{{appId}}.bundle.js')
+  createAnchor('{{bundlePath}}/vendors.bundle.js'),
+  createAnchor('{{bundlePath}}/commons.bundle.js'),
+  createAnchor('{{bundlePath}}/{{appId}}.bundle.js')
 ];
 ```
 
